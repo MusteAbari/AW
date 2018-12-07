@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  width: 100%;
   margin: 0;
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -50,9 +51,44 @@ html {
 p {
   position: absolute;
   top: 70%;
-  left: 45%;
+  left: 50%;
   color: #000;
   font-size: 25px;
   font-weight: bolder;
   opacity: 1;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .showcase {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+
+  .logo {
+    height: 150px;
+  }
+
+  p {
+    font-size: 13px;
+    top: 50%;
+  }
+}
+@media (max-width: 900px) {
+  .showcase {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+
+  .logo {
+    height: 200px;
+    top: 50%;
+  }
+
+  p {
+    font-size: 13px;
+    top: 75%;
+  }
 }
