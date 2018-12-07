@@ -1,0 +1,90 @@
+:root {
+  --primary: #ffffff;
+  --dark: #000000;
+  --light: #ffdde6;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 104, 0.8);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  background: var(--primary);
+  margin: 30px 100px;
+  line-height: 1.4;
+  opacity: 0.8;
+  min-height: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "showcase showcase showcase"
+    "showcase showcase showcase"
+    "area-a area-a area-b";
+}
+
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(../images/cutlery-flatware-forks-172491.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  color: var(--primary);
+}
+
+.showcase p {
+  font-size: 0.9rem;
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.btn {
+  background: var(--light);
+  color: var(--dark);
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+}
+
+.area {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  min-height: 30vh;
+  text-align: center;
+}
+
+.area-a {
+  grid-area: area-a;
+}
+
+.area-b {
+  grid-area: area-b;
+}

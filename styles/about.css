@@ -1,0 +1,77 @@
+.about {
+  text-align: center;
+  background-color: var(--light);
+  padding: 50px;
+}
+
+.about h1 {
+  font-size: 3rem;
+}
+
+.about p {
+  padding: 0 150px;
+}
+
+.about-main {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  /* border: #000000 solid 2px; */
+}
+
+.about-main p {
+  background-color: #ffffff;
+  text-align: left;
+  padding: 50px;
+  font-size: 16px;
+}
+
+.about-main img {
+  width: 100%;
+}
+
+.form {
+  background: #ffffff;
+  margin: 50px 100px;
+  padding: 50px 100px;
+}
+input[name="name"],
+input[type="email"] {
+  width: 49%;
+}
+
+input[name="subject"],
+textarea {
+  width: 100%;
+}
+
+input[name="name"],
+input[name="email"],
+input[name="subject"],
+textarea {
+  padding: 12px;
+  border: 0px solid;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+
+  margin-bottom: 10px;
+  resize: vertical;
+  background-color: transparent;
+  color: #000;
+}
+
+input[name="name"]::placeholder,
+input[name="email"]::placeholder,
+input[name="subject"]::placeholder,
+textarea::placeholder {
+  color: #000;
+  font-size: 16px;
+}
+
+.btn {
+  border: 0;
+  padding: 0;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  margin: 5px 5px;
+  text-decoration: none;
+  border-radius: 15%;
+}
+
+.fa:hover {
+  opacity: 0.6;
+}
+
+.fa-instagram {
+  color: #000;
+}
+
+.fa-twitter {
+  color: #000;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--primary);
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--primary);
+}
