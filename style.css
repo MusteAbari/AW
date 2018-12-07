@@ -1,88 +1,58 @@
-:root {
-  --primary: #ffffff;
-  --dark: #000000;
-  --light: #ffeaf2;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 104, 0.8);
-}
-
+body,
 html {
-  box-sizing: border-box;
-  font-family: "Open Sans Condensed", sans-serif;
-}
-
-body {
-  background: var(--primary);
-  margin: 30px 150px;
-  line-height: 1.4;
-  opacity: 0.8;
-  min-height: 100%;
-}
-
-h1 {
-  text-transform: uppercase;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
-}
-
-.top-container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-areas:
-    "showcase showcase showcase"
-    "showcase showcase showcase"
-    "area-a area-a area-b";
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
 }
 
 .showcase {
-  grid-area: showcase;
-  min-height: 400px;
-  background: url(images/leaves.jpg);
-  background-size: cover;
+  position: relative;
+  opacity: 0.7;
   background-position: center;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  box-shadow: var(--shadow);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+  background-image: url("images/plate.jpg");
+  min-height: 100%;
 }
 
-.showcase h1 {
-  font-size: 2rem;
-  margin-bottom: 0;
-  color: var(--primary);
+.showcase:hover {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
 
-.showcase p {
-  font-size: 0.9rem;
-  margin-top: 0;
-  color: var(--primary);
+.image {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
 
-.btn {
-  background: var(--light);
-  color: var(--dark);
-  padding: 0.6rem 1.3rem;
-  text-decoration: none;
-  border: 0;
+.logo {
+  height: 300px;
+  animation: image;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0.7;
 }
 
-.area {
-  background: var(--primary);
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-}
-
-.area-a {
-  grid-area: area-a;
-}
-
-.area-b {
-  grid-area: area-b;
+p {
+  position: absolute;
+  top: 70%;
+  left: 45%;
+  color: #000;
+  font-size: 25px;
+  font-weight: bolder;
+  opacity: 1;
 }
